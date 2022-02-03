@@ -1,4 +1,4 @@
-package org.example.mirai.plugin
+package github.kituin.mirai.qian
 
 import net.mamoe.mirai.alsoLogin
 import net.mamoe.mirai.console.MiraiConsole
@@ -10,13 +10,13 @@ suspend fun main() {
     MiraiConsoleTerminalLoader.startAsDaemon()
 
     //如果是Kotlin
-    PluginMain.load()
-    PluginMain.enable()
+    QianMain.load()
+    QianMain.enable()
     //如果是Java
 //    JavaPluginMain.INSTANCE.load()
 //    JavaPluginMain.INSTANCE.enable()
 
-    val bot = MiraiConsole.addBot(123456, "") {
+    val bot = MiraiConsole.addBot(1455097289, "shenyang520") {
         fileBasedDeviceInfo()
     }.alsoLogin()
 
