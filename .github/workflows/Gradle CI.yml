@@ -48,7 +48,7 @@ jobs:
         run: ./gradlew buildPlugin
       # Upload Artifact
       - name: Upload Artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v2.3.1
         with:
           name: mirai-console-plugin-qian 
-          path: ./projects/mirai-console-plugin-qian/build/mirai/mirai-console-plugin-qian-*.mirai.jar
+          path: /home/runner/work/mirai-console-plugin-qian/mirai-console-plugin-qian/build/mirai/mirai-console-plugin-qian-*.mirai.jar
