@@ -80,6 +80,7 @@ fun QianProcess(eventChannel:EventChannel<Event>){
                     val chain = buildMessageChain {
                         + message.quote()
                         + PlainText("[第 $randoms 签:解签]\r\r")
+                        + PlainText(jie)
                     }
                     group.sendMessage(chain)
                 }else{
